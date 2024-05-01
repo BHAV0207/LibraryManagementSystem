@@ -1,4 +1,6 @@
-package com.example.demo.Models;
+package com.example.demo.BMS.Models;
+
+import com.example.demo.BMS.Models.Book;
 
 import java.util.List;
 

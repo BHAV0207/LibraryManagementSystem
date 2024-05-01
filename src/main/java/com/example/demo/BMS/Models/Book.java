@@ -1,8 +1,8 @@
-package com.example.demo.Models;
+package com.example.demo.BMS.Models;
 
 import java.util.Date;
 
-import static com.example.demo.Models.BookStatus.NOT_ISSUED;
+import static com.example.demo.BMS.Models.BookStatus.NOT_ISSUED;
 
 public class Book {
     private Author author;

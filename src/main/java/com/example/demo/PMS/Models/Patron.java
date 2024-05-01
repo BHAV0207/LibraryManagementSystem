@@ -1,24 +1,28 @@
-package com.example.demo.Models;
+package com.example.demo.PMS.Models;
 
+import com.example.demo.BMS.Models.Book;
+
+import java.util.ArrayList;
 import java.util.List;
 
 public class Patron {
-    private int id;
+    private long id;
     private String name;
     private String email;
     private List<Book> borrowedBooks;
 
-    public Patron(int id, String name, String email) {
+    public Patron(long id, String name, String email) {
         this.id = id;
         this.name = name;
         this.email = email;
+        borrowedBooks = new ArrayList<>();
     }
 
-    public int getId() {
+    public long getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(long id) {
         this.id = id;
     }
 
@@ -42,7 +46,7 @@ public class Patron {
         return borrowedBooks;
     }
 
-    public void setBorrowedBooks(List<Book> borrowedBooks) {
-        this.borrowedBooks = borrowedBooks;
+    public void setBorrowedBooks(Book book) {
+        this.borrowedBooks.add(book);
     }
 }
